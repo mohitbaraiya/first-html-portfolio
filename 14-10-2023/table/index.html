@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <table class="order-table" cellspacing="0">
+        <thead>
+          <tr align="left">
+            <th><input type="checkbox" name="all" id="allCheck" /></th>
+            <th>order</th>
+            <th>date</th>
+            <th align="center">name</th>
+            <th align="center">city</th>
+            <th>payment status</th>
+            <th>order status</th>
+            <th>total</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <td class="checkbox"><input type="checkbox" name="00001" /></td>
+            <td>
+              <div class="table-heading">Order</div>
+              <div>#00001</div>
+            </td>
+            <td>
+              <div class="table-heading">Date</div>
+              <div>
+                12 May 2017 <br />
+                11:21PM
+              </div>
+            </td>
+            <td>
+              <div class="table-heading">Name</div>
+              <div class="profile">
+                <span class="avatar">LT</span>
+                <span>Lean Todd</span>
+              </div>
+            </td>
+            <td>
+              <div class="table-heading">City</div>
+              <div>Port Tadstad</div>
+            </td>
+            <td>
+              <div class="table-heading">payment status</div>
+              <span class="await-authorization">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-hourglass-high"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M6.5 7h11"></path>
+                  <path
+                    d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z"
+                  ></path>
+                  <path
+                    d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z"
+                  ></path>
+                </svg>
+                <span>Awaiting Authorization</span>
+              </span>
+            </td>
+            <td>
+              <div class="table-heading">order status</div>
+              <span class="await-authorization">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-square-rounded-x"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10l4 4m0 -4l-4 4" />
+                  <path
+                    d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+                  />
+                </svg>
+                <span>Unfulfilled</span></span
+              >
+            </td>
+            <td>
+              <div class="table-heading">total</div>
+              <div><em>$443.56</em></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
